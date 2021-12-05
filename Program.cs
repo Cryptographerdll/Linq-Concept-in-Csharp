@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.IO;
 using System.Text;
-using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace Linq_1
+namespace Linq_3
 {
     class Program
     {
@@ -29,25 +26,16 @@ namespace Linq_1
 
             /// Compare queries 
 
-            List <string> Names = new List <string>()
+            List<string> Hi = new List<string>()
             {
-                "khalil","bouhousse","home","speed","window","get","Slow","Server"
+                "khalid","bouhousse","home","speed","window","get","Slow","Server"
             };
 
-            List <string> Result = new List <string>();
+            // Query Expression Concept .
 
-            for (int i = 0; i < Names.Count ; i++)
-            {
-                if (Names[i].Length > 3)
-                {
-                    Result.Add(Names[i]); // Only Items that Greater the 3 Characters . And Index start from 0 .
-                }
-            }
-
-            foreach (var result in Result)
-            {
-                Console.WriteLine($"the Result is {result}");
-            }
+            var Result = from item in Hi 
+                         where item.Length > 3
+                         select item;
         }
     }
 }
