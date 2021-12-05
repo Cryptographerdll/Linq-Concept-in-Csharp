@@ -31,7 +31,7 @@ namespace Linq_1
 
             List <string> Names = new List <string>()
             {
-                "khalid","bouhousse","home","speed","window","get","Slow","Server"
+                "khalil","bouhousse","home","speed","window","get","Slow","Server"
             };
 
             List <string> Result = new List <string>();
