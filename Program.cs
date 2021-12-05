@@ -28,7 +28,7 @@ namespace Linq_3
 
             List<string> Hi = new List<string>()
             {
-                "khalid","bouhousse","home","speed","window","get","Slow","Server"
+                "khalil","bouhousse","home","speed","window","get","Slow","Server"
             };
 
             // Query Expression Concept .
